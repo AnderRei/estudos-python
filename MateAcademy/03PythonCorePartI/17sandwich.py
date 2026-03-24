@@ -27,7 +27,7 @@ def ingredients(func: Callable) -> Callable:
 
 @bread
 @ingredients
-def sandwich()-> None:
+def sandwich() -> None:
     print("   --ham--")
 
 
