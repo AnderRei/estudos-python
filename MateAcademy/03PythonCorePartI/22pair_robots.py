@@ -1,5 +1,5 @@
 class Robot:
-    def __init__(self, name: str) -> str:
+    def __init__(self, name: str):
         self.name = name
         self.partner = None
 
@@ -14,8 +14,20 @@ def pair_robots(robots: list) -> tuple:
     return robot_1, robot_2
 
 
-r1, r2 = pair_robots(["Robo A", "Robo B"])
+# LISTA COM OS NOMES
+robots = ['Alex', 'Tom']
 
-print(r1.name)  # Robo A
-print(r1.partner.name)  # Robo B
-print(r2.partner.name)  # Robo A
+# CHAMA A FUNÇÃO
+new_robots = pair_robots(robots)
+
+# MOSTRA OS DADOS
+print(new_robots)
+
+print(new_robots[0].name)
+print(new_robots[1].name)
+
+print(new_robots[0].partner.name)
+print(new_robots[1].partner.name)
+
+print(new_robots[0].partner is new_robots[1])
+print(new_robots[1].partner is new_robots[0])
