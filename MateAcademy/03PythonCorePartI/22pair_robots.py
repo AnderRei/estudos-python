@@ -15,7 +15,7 @@ def pair_robots(robots: list) -> tuple:
 
 
 # LISTA COM OS NOMES
-robots = ['Alex', 'Tom']
+robots = ["Alex", "Tom"]
 
 # CHAMA A FUNÇÃO
 new_robots = pair_robots(robots)
