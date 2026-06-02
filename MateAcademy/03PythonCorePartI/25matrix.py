@@ -17,8 +17,8 @@ class Matrix:
 		return diagonal
 	
 
-	#def rotate_rows(self, number):
-	    #pass
+	def rotate_rows(self, number):
+	    pass	  
 	
 	
     #def rotate_columns(self, number):
