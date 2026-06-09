@@ -7,9 +7,9 @@ class Robot:
 
 def copy_robot(robot: Robot) -> Robot:
     return Robot(robot.model, robot.constructor, robot.serial_no + 1)
-  
 
-robot = Robot('g135', 'Alex', 1664)
+
+robot = Robot("g135", "Alex", 1664)
 robot_copy = copy_robot(robot)
 
 print(robot_copy is robot)
