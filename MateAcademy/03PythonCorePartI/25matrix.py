@@ -18,17 +18,17 @@ class Matrix:
 
         if not self.matrix:
             return self.matrix
-            
+
         number = number % len(self.matrix)
         for i in range(number):
             self.matrix = self.matrix[1:] + self.matrix[:1]
         return self.matrix
 
     def rotate_columns(self, number: int) -> list:
-        
+
         if not self.matrix:
             return self.matrix
-        
+
         rotate = []
         for linha in self.matrix:
             nova_linha = linha
